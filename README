@@ -1,0 +1,29 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1513
+
+This script provides a way to compile and link MS Visual Studio 6 C++       
+projects, jump to compiler errors, start .exe file and look up in MSDN   
+help files from within VIM.                                              
+There are other projects that try to integrate VIM in Visual Studio.     
+VimVS6 does it the other way around and tries to integrate Visual Studio 
+in VIM ;-)   (don't take this too seriously)                             
+                                                                         
+Visual Studio can export a make file for nmake (see menu                 
+Project -> Export Makefile... in Visual Studio). Nmake is included in    
+Visual Studio 6. VimVS6 compiles a Visual Studio 6 project using nmake   
+and the exported makefile.                                               
+                                                                         
+Usage:                                                                   
+  <F5>:    make project                                                  
+  <S-F5>:  make all                                                      
+  <C-F5>:  start .exe file                                               
+  <F2>:    search for help in MSDN files for word under cursor           
+                                                                         
+  Once per VIM session the function VVS_SetEnvironment() must be called  
+  to specify paths VimVS6 looks for the project files.                   
+  Do   :call VVS_SetEnvironment( 'projectpath', 'projectname' )          
+                                                                         
+  E.g. :call VVS_SetEnvironment( 'f:\prog\GALer', 'GALer' )              
+                                                                         
+  This call is not needed if only MSDN help search is used.
+
+For details on configuration see script header.
