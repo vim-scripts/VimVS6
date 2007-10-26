@@ -18,14 +18,15 @@
 "**
 "**            This program is distributed in the hope that it will be
 "**            useful, but WITHOUT ANY WARRANTY; without even the implied
-"**            warrenty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+"**            warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 "**            PURPOSE.
 "**            See the GNU General Public License for more details.
 "**
-"** Version:   1.0.0
+"** Version:   1.0.1
 "**            tested under Win32, GVIM 6.4
 "**
-"** History:   1.0.0  first public release, 11.04.2006
+"** History:   1.0.1  some typos fixed
+"**            1.0.0  first public release, 11.04.2006 
 "**
 "*****************************************************************************
 "**
@@ -52,7 +53,7 @@
 "**     to specify paths VimVS6 looks for the project files.
 "**     Do   :call VVS_SetEnvironment( 'projectpath', 'projectname' )
 "**
-"**     E.g. :call VSS_SetEnvironment( 'f:\prog\GALer', 'GALer' )
+"**     E.g. :call VVS_SetEnvironment( 'f:\prog\GALer', 'GALer' )
 "**
 "**     This call is not needed if only MSDN help search is used.
 "**
@@ -76,22 +77,22 @@
 "**       wrong for your installation.
 "**          let g:vvs_MSDN = 'c:\programme\microsoft visual studio\msdn98\98vs\1031\msdnvs98.col'
 "**
-"**     - <Plug>VSS_StartMake
+"**     - <Plug>VVS_StartMake
 "**       mapping to start make process
 "**       default:
 "**          map <silent> <F5> <Plug>VVS_StartMake
 "**
-"**     - <Plug>VSS_StartMakeAll
+"**     - <Plug>VVS_StartMakeAll
 "**       mapping to start make all process
 "**       default:
 "**          map <silent> <S-F5> <Plug>VVS_StartMakeAll
 "**
-"**     - <Plug>VSS_StartExe
+"**     - <Plug>VVS_StartExe
 "**       mapping to start debug version of .exe file
 "**       default:
 "**          map <silent> <C-F5> <Plug>VVS_StartExe
 "**
-"**     - <Plug>VSS_SearchHelp
+"**     - <Plug>VVS_SearchHelp
 "**       mapping to search in help files (MSDN)
 "**       default:
 "**          map <silent> <F2> <Plug>VVS_SearchHelp
